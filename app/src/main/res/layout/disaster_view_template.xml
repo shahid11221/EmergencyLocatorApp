@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393e46">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/disaster_template_layout"
+        >
+        <ImageView
+            android:id="@+id/disaster_template_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_add_24"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="01"
+           android:weightSum="2"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+
+           >
+           <TextView
+               android:id="@+id/disaster_template_name"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Name:"
+               android:textSize="12sp"
+               android:textColor="#000000"
+               android:textStyle="bold"
+               android:gravity="center"
+               />
+           <TextView
+               android:id="@+id/disaster_template_city"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="City:"
+               android:textSize="12sp"
+               android:textColor="#000000"
+               android:textStyle="bold"
+               android:gravity="center"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            >
+            <TextView
+                android:id="@+id/disaster_template_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/disaster_template_catigory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Catigory"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:gravity="end"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/disaster_template_mark_safe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Mark Safe"
+
+                />
+            <Button
+                android:id="@+id/disaster_template_safe_users"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Safe Users"
+
+                />
+        </LinearLayout>
+        
+            
+            
+        
+    </LinearLayout>
+
+</LinearLayout>

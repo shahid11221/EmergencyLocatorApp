@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PersonalSafety</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_generate_request">Map</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="sos">SOS</string>
+    <string name="already_registered">Already Registered??</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="dont_have_an_account_yet">Dont have an account yet?</string>
+    <string name="login">login</string>
+    <string name="emergency_response">Emergency Response!</string>
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#393e46"
+
+    android:layout_margin="10dp"
+    tools:context=".AddContacts">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                android:layout_margin="20dp">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_weight="3"
+
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guardian One"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+
+                        />
+                    <EditText
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:id="@+id/guardian1"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Guardian1 Name" />
+                    <EditText
+                        android:id="@+id/contact1"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:textColor="#000000"
+                        android:layout_margin="5dp"
+                        android:textColorHint="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="Contact Number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_margin="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guardian Two"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+
+                        />
+                    <EditText
+                        android:id="@+id/guardian2"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Guardian2 Name" />
+                    <EditText
+                        android:id="@+id/contact2"
+                        android:layout_width="match_parent"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:layout_margin="5dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="Contact Number" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_margin="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/Widget.AppCompat.Button.Colored"
+
+                    android:layout_weight="3">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guardian Three"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+
+                        />
+                    <EditText
+                        android:id="@+id/guardian3"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:textColor="#000000"
+                        android:layout_margin="5dp"
+                        android:textColorHint="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Guardian3 Name" />
+                    <EditText
+                        android:id="@+id/contact3"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:background="#ffffff"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="Contact Number" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="contactsaveclick"
+                android:layout_margin="30dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Save"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

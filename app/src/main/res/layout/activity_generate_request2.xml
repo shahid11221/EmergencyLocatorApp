@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateRequest"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/pic_main"
+        android:weightSum="3.2"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/click1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:weightSum="6"
+                android:layout_margin="20sp"
+                android:orientation="vertical"
+                android:onClick="generatebuttonclick"
+
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:onClick="generatebuttonclick"
+                    android:src="@drawable/unnamed"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Other Emergency"
+                    android:onClick="generatebuttonclick"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/click2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="20sp"
+                android:weightSum="6"
+                android:orientation="vertical"
+                android:onClick="generatebuttonclickPolice"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:src="@drawable/unnamed2"
+                    android:onClick="generatebuttonclickPolice"/>
+
+                <TextView
+                    android:onClick="generatebuttonclickPolice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="15dp"
+                    android:text="Police Emergency"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/click3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 android:weightSum="6"
+                android:layout_margin="20sp"
+                android:orientation="vertical"
+                android:onClick="generateButtonMedical"
+
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:onClick="generateButtonMedical"
+                    android:src="@drawable/fire"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Medical Emergency"
+                    android:onClick="generateButtonMedical"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/click4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="20sp"
+                android:weightSum="6"
+                android:orientation="vertical"
+                android:onClick="generateButtonFire"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:src="@drawable/medicine"
+                    android:onClick="generateButtonFire"/>
+
+                <TextView
+                    android:onClick="generateButtonFire"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="15dp"
+                    android:text="Fire Emergency"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            >
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

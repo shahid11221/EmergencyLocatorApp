@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilteredStats">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#393e46"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2"
+            >
+            <EditText
+                android:id="@+id/cityname"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_margin="10dp"
+                android:hint="City"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="filter1Click"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"
+
+                android:text="Filter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <TextView
+                android:id="@+id/datefrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_margin="10dp"
+                android:text="Date From"
+                android:onClick="datefromClick"
+                />
+            <TextView
+                android:id="@+id/dateto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_margin="10dp"
+                android:text="Date To"
+                android:onClick="datetoClick"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="filter2Click"
+                android:text="Filter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+
+            android:weightSum="2"
+            >
+            <EditText
+                android:id="@+id/categoryname"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Category(Type of disaster)"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_weight="1"
+                android:onClick="filter3Click"
+                android:layout_gravity="center"
+                android:text="Filter"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="15dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

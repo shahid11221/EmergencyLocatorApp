@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#6200ee"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3.2"
+                    android:gravity="center"
+                    android:background="@drawable/pic_main"
+
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/layout_emergency_request"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="7"
+                            android:gravity="center"
+                            android:layout_margin="20sp"
+                             android:onClick="btnemclick"
+                            android:orientation="vertical"
+
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:src="@drawable/emergency"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FF000000"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/btnemergency"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:textSize="15dp"
+                                android:text="Generate Emergency Request"
+                                android:textColor="#ffffff"
+
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="20sp"
+                            android:onClick="btnguard"
+                            android:weightSum="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/layout_add_guardians"
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:src="@drawable/contacts"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FF000000"/>
+
+                            <TextView
+                                android:id="@+id/btnguardian"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:textSize="15dp"
+                                android:text="Add Guardians"
+                                android:onClick="btnguard"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        >
+                        <LinearLayout
+                            android:id="@+id/layout_identify_disaster"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="20sp"
+                           android:onClick="btndis1click"
+                            android:weightSum="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:src="@drawable/disaster"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FF000000"/>
+
+                            <TextView
+                                android:text="Identify Disaster"
+                                android:onClick="btndis1click"
+                                android:id="@+id/btndisaster1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_respond_disaster"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="20sp"
+                            android:onClick="btndis2click"
+                            android:weightSum="7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:src="@drawable/respond"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="#FF000000"
+                                />
+
+                            <TextView
+                                android:text="Respond to Disaster"
+                                android:onClick="btndis2click"
+                                android:id="@+id/btndisaster2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:textColor="#ffffff"
+                                android:textSize="15dp"
+                                android:gravity="center"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"
+
+                        >
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/drawer_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
